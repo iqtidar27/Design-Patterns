@@ -10,16 +10,16 @@ public:
     virtual ~Duck() = default;
     Duck(const Duck &) = delete;
     Duck(Duck &&other) noexcept : m_flyBehavior(other.m_flyBehavior), m_quackBehavior(other.m_quackBehavior) {}
-    Duck &operator=(const Duck &) = delete;
-    Duck &operator=(Duck &&other) noexcept
-    {
-        if (this != &other)
-        {
-            m_flyBehavior = other.m_flyBehavior;
-            m_quackBehavior = other.m_quackBehavior;
-        }
-        return *this;
-    }
+    // Duck &operator=(const Duck &) = delete;
+    // Duck &operator=(Duck &&other) noexcept
+    // {
+    //     if (this != &other)
+    //     {
+    //         m_flyBehavior = other.m_flyBehavior;
+    //         m_quackBehavior = other.m_quackBehavior;
+    //     }
+    //     return *this;
+    // }
 
     void swim() const
     {
