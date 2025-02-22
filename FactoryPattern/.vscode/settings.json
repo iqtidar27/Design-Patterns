@@ -1,6 +1,8 @@
 {
     "files.associations": {
         "xstring": "cpp",
-        "memory": "cpp"
+        "memory": "cpp",
+        "iostream": "cpp",
+        "pizzafactory": "cpp"
     }
 }
